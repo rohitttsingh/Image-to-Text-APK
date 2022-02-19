@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PU Vehicle App</string>
+
+    <string name="vehiclenumber">गाडी नंबर</string>
+    <string name="imagepreview">छवि पूर्वावलोकन</string>
+    <string name="detail">विवरण नीचे हैं:</string>
+    <string name="search">खोज</string>
+    <string name="name">नाम: </string>
+    <string name="location">स्थान: </string>
+    <string name="hindi">हिंदी</string>
+    <string name="gujarati">ગુજરાતી</string>
+    <string name="email">ईमेल:  </string>
+    <string name="call">बुलाना</string>
+    <string name="entername">आप का नाम यहाँ लिखे</string>
+    <string name="phnumber1">फ़ोन दर्ज करें संख्या 1</string>
+    <string name="phnumber2">फ़ोन दर्ज करें संख्या 2</string>
+    <string name="emailenter">ईमेल दर्ज करें</string>
+    <string name="locationenter">स्थान दर्ज करें</string>
+    <string name="SUBMIT">प्रस्तुत</string>
+
+
+
+
+
+</resources>

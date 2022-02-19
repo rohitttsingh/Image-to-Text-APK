@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorTransparentsWhite">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ll">
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="0dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="english"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:id="@+id/engbtn"/>
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="0dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hindi"
+            android:onClick="onClick"
+            android:layout_weight="1"
+            android:id="@+id/hinbtn"/>
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="0dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gujarati"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:id="@+id/gujbtn"/>
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="0dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_below="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#ffffff"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:text="@string/vehiclenumber"
+                            android:textAllCaps="true"
+                            android:textColor="#1F51FF"
+                            android:textSize="24sp"
+                            android:textStyle="bold"></TextView>
+
+                        <ImageButton
+                            android:id="@+id/copy_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.5"
+                            android:background="#cdcdcd"
+                            android:backgroundTint="#ffffff"
+                            android:src="@drawable/ic_copy_24" />
+
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/resultET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:autoLink="all"
+                        android:background="@null"
+                        android:padding="5dp"
+                        android:textColor="#4169E1" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                app:cardBackgroundColor="#ffffff"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/imagepreview"
+                        android:textAllCaps="true"
+                        android:textColor="#1F51FF"
+                        android:textSize="20sp"
+                        android:textStyle="bold"></TextView>
+
+                    <ImageView
+                        android:id="@+id/imageV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:maxHeight="250dp"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/entername"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"/>
+            <EditText
+                android:id="@+id/phone1"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:hint="@string/phnumber1"
+                android:textColor="@color/white"/>
+            <EditText
+                android:id="@+id/phone2"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:hint="@string/phnumber2"
+                android:textColor="@color/white"/>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/emailenter"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/white"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/location"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:inputType="text"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:hint="@string/locationenter"/>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SUBMIT"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="280dp"/>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PU_Vehicle_APP</string>
+
+    <string name="vehiclenumber">Vehicle Number</string>
+    <string name="imagepreview">Image Preview</string>
+    <string name="detail">Vehicle Number</string>
+    <string name="search">Search</string>
+    <string name="name">Name:  </string>
+    <string name="location">Location:  </string>
+    <string name="hindi">हिंदी</string>
+    <string name="gujarati">ગુજરાતી</string>
+    <string name="email">Email:  </string>
+    <string name="call">CAll</string>
+    <string name="entername">Enter The Name Here</string>
+    <string name="phnumber1">Enter Phone Number 1</string>
+    <string name="phnumber2">Enter Phone Number 2</string>
+    <string name="emailenter">Enter The Email</string>
+    <string name="locationenter">Enter The Location</string>
+    <string name="SUBMIT">SUBMIT</string>
+
+
+</resources>

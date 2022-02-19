@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "981310728005",
+    "project_id": "pu-vehicle-app",
+    "storage_bucket": "pu-vehicle-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:981310728005:android:e0e7ae809a9fa5e097402c",
+        "android_client_info": {
+          "package_name": "com.module.pu_vehicle_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "981310728005-3mn84o9a4mehd8dq6pulh33aapli1ind.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRfR3rlJ4yIFcQSgXy0m4o8QYM0Xr9L7c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "981310728005-3mn84o9a4mehd8dq6pulh33aapli1ind.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
